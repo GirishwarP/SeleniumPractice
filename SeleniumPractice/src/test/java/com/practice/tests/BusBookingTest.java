@@ -9,8 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.Base.Base;
-import com.Utils.ExtentTestManager;
+import com.base.Base;
 
 public class BusBookingTest extends Base{
 	
@@ -30,7 +29,8 @@ public class BusBookingTest extends Base{
 
 	@BeforeMethod
 	public void data() throws InterruptedException {
-		driver = Base.getDriver();
+		Base.initialization();
+		driver = Base.driver;
 		sc = new Scanner(System.in);
 		
 		System.out.println("Departure Date(DD MON YYYY)");

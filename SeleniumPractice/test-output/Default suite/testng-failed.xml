@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.tests.AnnotationTransformerTest">
+      <class name="com.practice.tests.TimeSheetTest">
         <methods>
-          <include name="test2"/>
-          <include name="test1"/>
+          <include name="loadBrowser"/>
+          <include name="timeSheetTest"/>
         </methods>
-      </class> <!-- com.practice.tests.AnnotationTransformerTest -->
+      </class> <!-- com.practice.tests.TimeSheetTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

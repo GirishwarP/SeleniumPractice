@@ -14,7 +14,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.Base.Base;
+import com.base.Base;
 
 public class DynamicTableHandling extends Base {
 
@@ -26,7 +26,7 @@ public class DynamicTableHandling extends Base {
 
 	@BeforeMethod
 	public void init() {
-		driver = Base.getDriver();
+		driver = Base.driver;
 		driver.get("http://demo.guru99.com/test/web-table-element.php");
 	}
 	

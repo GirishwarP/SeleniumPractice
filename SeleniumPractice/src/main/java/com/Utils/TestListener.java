@@ -1,6 +1,6 @@
 package com.Utils;
 
-import com.Base.Base;
+import com.base.Base;
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -34,7 +34,7 @@ public class TestListener extends Base implements ITestListener {
 
 		// Get driver from BaseTest and assign to local webdriver variable.
 		Object testClass = result.getInstance();
-		WebDriver webDriver = ((Base) testClass).getDriver();
+		WebDriver webDriver = Base.driver;
 
 		// Take base64Screenshot screenshot.
 		String base64Screenshot = "data:image/png;base64,"

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [SeleniumPracticeTest-Suite]" parallel="classes">
-  <listeners>
-    <listener class-name="com.Analyzer.AnnotationTransformer"/>
-  </listeners>
-  <test thread-count="2" name="SeleniumPracticeRegression(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.tests.AnnotationTransformerTest">
+      <class name="com.practice.tests.TimeSheetTest">
         <methods>
-          <include name="test2"/>
-          <include name="test1"/>
+          <include name="loadBrowser"/>
+          <include name="timeSheetTest"/>
         </methods>
-      </class> <!-- com.practice.tests.AnnotationTransformerTest -->
+      </class> <!-- com.practice.tests.TimeSheetTest -->
     </classes>
-  </test> <!-- SeleniumPracticeRegression(failed) -->
-</suite> <!-- Failed suite [SeleniumPracticeTest-Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

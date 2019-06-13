@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.Base.Base;
+import com.base.Base;
 
 public class WindowHandling extends Base {
 
@@ -14,7 +14,8 @@ public class WindowHandling extends Base {
 	
 	@BeforeMethod
 	public void init() {
-		driver = Base.getDriver();
+		initialization();
+		driver = Base.driver;
 		driver.get("http://demo.guru99.com/popup.php");
 	}
 	

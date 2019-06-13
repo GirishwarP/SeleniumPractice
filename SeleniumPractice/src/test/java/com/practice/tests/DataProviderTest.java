@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.Base.Base;
+import com.base.Base;
 import com.Utils.ExtentTestManager;
 
 public class DataProviderTest extends Base{
@@ -21,7 +21,7 @@ public class DataProviderTest extends Base{
 	
 	@BeforeMethod
 	public void loadBrowser() {
-		driver = Base.getDriver();
+		driver = Base.driver;
 		driver.get("https://www.google.com/");
 	}
 	

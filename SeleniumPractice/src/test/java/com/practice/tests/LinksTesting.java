@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.Base.Base;
+import com.base.Base;
 
 public class LinksTesting extends Base {
 
@@ -16,7 +16,8 @@ public class LinksTesting extends Base {
 	
 	@BeforeMethod
 	public void init() {
-		driver = Base.getDriver();
+		initialization();
+		driver = Base.driver;
 		driver.get("https://www.amazon.com/");
 	}
 	
