@@ -2,7 +2,6 @@ package com.practice.tests;
 
 import java.io.IOException;
 import java.util.Iterator;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;

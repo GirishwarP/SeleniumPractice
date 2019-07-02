@@ -40,11 +40,8 @@ public class ExcelFileReader {
 			ExcelData data = new ExcelData();
 			
 			data.setUserName(row.getCell(0) == null ? null : row.getCell(0).getStringCellValue());
-			
 			data.setPassword(row.getCell(1) == null ? null : row.getCell(1).getStringCellValue());
-			
 			data.setEmail(row.getCell(2) == null ? null : row.getCell(2).getStringCellValue());
-			
 			data.setRowId(row.getRowNum());
 			
 			excelData.add(data);
@@ -66,9 +63,9 @@ public class ExcelFileReader {
 		
 		sheet = workbook.getSheet(sheetName); 
 		
-		 Row row = sheet.getRow(rowId);
+		Row row = sheet.getRow(rowId);
 		 
-		 row.createCell(3, CellType.STRING).setCellValue(status);
+		row.createCell(3, CellType.STRING).setCellValue(status);
 		
 		file = new File(filePath);
 		FileOutputStream fos = new FileOutputStream(file);

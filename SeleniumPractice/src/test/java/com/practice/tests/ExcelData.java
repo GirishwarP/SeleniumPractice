@@ -5,13 +5,9 @@ import java.io.Serializable;
 public class ExcelData implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
 	private String userName;
-
 	private String password;
-
 	private String email;
-
 	private Integer rowId;
 
 	public String getUserName() {
@@ -51,5 +47,4 @@ public class ExcelData implements Serializable {
 		return "ExcelData [userName=" + userName + ", password=" + password + ", email=" + email + ", rowId=" + rowId
 				+ "]";
 	}
-
 }
